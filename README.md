@@ -1,6 +1,6 @@
 # TFM_Audience_Analisys
 
-En este repositorio se alojan las distintas piezas de código, pipelines y visualización del trabajo fin de master realizado (UNIR 2021-2022) por Alfredo Gómez Castillejos con títulos
+En este repositorio se alojan las distintas piezas de código, pipelines y visualización; así como un conjunto de datos ejemplo del trabajo fin de master realizado (UNIR 2021-2022) por Alfredo Gómez Castillejos con títulos
 
 El trabajo se compone de las siguientes piezas por cada componente utilizado
 
@@ -21,5 +21,6 @@ Código en R realizado con Notebook, intregrado en el proceso de preparación de
 Visualización desarrollada en PowerBI:
 
 
+Ejemplos de datos de entrada:
 
 
