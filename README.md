@@ -5,7 +5,7 @@ En este repositorio se alojan las distintas piezas de código, pipelines y visua
 El trabajo se compone de las siguientes piezas por cada componente utilizado
 
 Integración Continua de Datos Streamsets con las siguients Pipelines:
-
+IMPORTACION DE DATOS 
 
 
 Preparación de datos en Bigquery con las siguientes piezas de código SQL:
