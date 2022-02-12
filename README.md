@@ -23,4 +23,3 @@ Visualización desarrollada en PowerBI:
 
 Ejemplos de datos de entrada:
 
-
