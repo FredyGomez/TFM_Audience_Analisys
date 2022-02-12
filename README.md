@@ -4,8 +4,9 @@ _En este repositorio se alojan las distintas piezas de código, pipelines y visu
 
 El trabajo se compone de las siguientes piezas por cada componente utilizado
 
-###Integración Continua de Datos Streamsets con las siguients Pipelines:
-IMPORTACION DE DATOS 
+## Integración Continua de Datos Streamsets con las siguients Pipelines
+
+### Carga de datos desde la fuente 
 
 YOUGOV_PROFILES_METADATA_S3-GCS.zip
 Pipeline en Streamsets que recupera continuamente los datos desde el directorio de metadatos, aplicando las reglas indicadas en la memoria para parsear y sobreescribir los datos en destino.
@@ -17,6 +18,8 @@ YOUGOV_PROFILES_FILE_COUNT.zip
 Pipeline que se ejecuta para confirmar que han llegado todos los ficheros que deberían de llegar y validar la carga semanal de datos.
 
 
+### Procesado de Datos
+
 YOUGOV_PROFILES_DATAPREP_ANESRAKE_DATAVIZ.zip
 Pipeline qhe orquesta todo el procesado de datos dentro de la plataforma
 1) ejecuta las primeras queries de carga y preparación en BigQuery
@@ -27,7 +30,7 @@ Pipeline qhe orquesta todo el procesado de datos dentro de la plataforma
 
 
 
-###Preparación de datos en Bigquery con las siguientes piezas de código SQL:
+## Preparación de datos en Bigquery con las siguientes piezas de código SQL
 data_preparation_initial.sql
 
 
@@ -41,7 +44,7 @@ data_viz_preparation.sql
 
 
 
-###Código en R realizado con Notebook, intregrado en el proceso de preparación de datos mediante Streamsets:
+## Anesrake algoritmo en R - Notebooks
 
 Notebook que, recibiendo tablas disponibles en BigQuery, accede a las mismas y ejecuta el algoritmo anesrake
 01_r_anesrake_compute.ipynb
@@ -51,12 +54,12 @@ Notebook utilizado para validar datos, solo a modo de exploración, no necesario
 
 
 
-###Visualización desarrollada en PowerBI:
+## Visualización desarrollada en PowerBI
 
 
 Dashboard en formato pwbi
 
 
-###Ejemplos de datos de entrada:
+## Ejemplos de datos de entrada
 
 
