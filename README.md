@@ -57,9 +57,17 @@ Notebook utilizado para validar datos, solo a modo de exploración, no necesario
 ## Visualización desarrollada en PowerBI
 
 
-Dashboard en formato pwbi
+Dashboard en formato pbix: Panel_Audiences.pbix
 
 
 ## Ejemplos de datos de entrada
 
+profiles_fr_2021_12_05.default_ns_n3.en.codes.mr.csv.gz: Codes entity en inglés y csv 
+profiles_fr_2021_12_05.default_ns_n3.en.definitions.jsonl.gz: Definitions entity en ingles y json
+profiles_fr_2021_12_05.default_ns_n3.en.definitions.mr.csv.gz: Definitions entity en inglés y csv
+profiles_fr_2021_12_05.default_ns_n3.en.subvariables.mr.csv.gz: Subvariables entity en inglés y csv
+profiles_fr_2021_12_05.default_ns_n3.fr.codes.mr.csv.gz: Codes entity en francés y csv
+profiles_fr_2021_12_05.default_ns_n3.fr.definitions.jsonl.gz: Definitions entity en francés y json
+profiles_fr_2021_12_05.default_ns_n3.fr.definitions.mr.csv.gz: Definitions entity en francés y csv
 
+profiles_fr_2021_12_05.default_ns_n3.fr.subvariables.mr.csv.gz
