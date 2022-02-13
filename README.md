@@ -1,6 +1,6 @@
 # TFM_Audience_Analisys
 
-_En este repositorio se alojan las distintas piezas de código, pipelines y visualización; así como un conjunto de datos ejemplo del trabajo fin de master realizado (UNIR 2021-2022) por Alfredo Gómez Castillejos con títulos_
+_En este repositorio se alojan las distintas piezas de código, pipelines y visualización; así como un conjunto de datos ejemplo del trabajo fin de master realizado (UNIR 2021-2022) por Alfredo Gómez Castillejos con título: Análisis de audiencias mediante datos de panelistas para optimización de campañas publicitarias_
 
 El trabajo se compone de las siguientes piezas por cada componente utilizado
 
