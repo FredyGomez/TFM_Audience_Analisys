@@ -32,14 +32,14 @@ Pipeline qhe orquesta todo el procesado de datos dentro de la plataforma
 
 ## Preparación de datos en Bigquery con las siguientes piezas de código SQL
 data_preparation_initial.sql
-
+Este componente carga el modelo principal de datos en BigQuery desde tablas externas aplicando pequeñas transformaciones.
 
 
 data_preparation_denormalization.sql
-
+Este segundo componente desnormaliza partiendo del modelo anterior y algunas tablas estáticas como country, utiliza un proceso staging inicial y luego la desnormalización final, también prepara algunos campos para un uso mas sencillo, como las categorías, variables y subvariables, codes, etc.
 
 data_viz_preparation.sql
-
+Este último paso genera un esquema preparado y optimizado para visualizaci´on, aunque ya en el modelo anterior se conseguían resultados suficientes, este adeás nos sirve para mejorar las relaciones entre datos e incluso cargar el modelo en el mismo PowerBI. Además de hacer algunas transformaciones ad-hoc para un caso de uso basado en fabricantes de automóviles.
 
 
 
@@ -57,7 +57,7 @@ Notebook utilizado para validar datos, solo a modo de exploración, no necesario
 ## Visualización desarrollada en PowerBI
 
 
-Dashboard en formato pbix: Panel_Audiences.pbix
+Dashboard en formato pbix: https://storage.googleapis.com/tfm_audiences/Panel_Audiences.pbix
 
 
 ## Ejemplos de datos de entrada
