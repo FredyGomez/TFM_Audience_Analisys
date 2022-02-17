@@ -59,6 +59,22 @@ Notebook utilizado para validar datos, solo a modo de exploración, no necesario
 
 Dashboard en formato pbix: https://storage.googleapis.com/tfm_audiences/Panel_Audiences.pbix
 
+Ficheros creados extrayendo PowerQueries desde PowerBI para refrencia sobre como se genera el modelo semántico:
+
+selected_ids.dax
+demographic.dax
+selected_all.dax
+selected_all_comp.dax
+selected_car_makers.dax
+selected_car_motoring.dax
+selected_audiences.dax
+entity_dim.dax
+entity_dim_comp.dax
+entity_dim_car_makers.dax
+entity_dim_cars_motoring.dax
+entity_dim_audiences.dax
+
+
 
 ## Ejemplos de datos de entrada
 
