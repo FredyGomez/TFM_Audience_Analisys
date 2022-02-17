@@ -1,0 +1,9 @@
+let
+    Source = GoogleBigQuery.Database([BillingProject="converged-havas-de"]),
+    #"converged-havas-de" = Source{[Name="converged-havas-de"]}[Data],
+    yougov_viz_Schema = #"converged-havas-de"{[Name="yougov_viz",Kind="Schema"]}[Data],
+    entity_dim_Table = yougov_viz_Schema{[Name="entity_dim",Kind="Table"]}[Data],
+    #"Removed Other Columns" = Table.SelectColumns(entity_dim_Table,{"cat1", "cat3", "cat4", "name", "description", "entity_name", "id"}),
+    #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns",{{"name", "Question"}, {"cat1", "Category"}, {"entity_name", "Response"}, {"cat3", "SubCategory"}})
+in
+    #"Renamed Columns"

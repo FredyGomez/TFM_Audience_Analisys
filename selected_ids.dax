@@ -1,0 +1,6 @@
+let
+    Source = selected_all,
+    #"Removed Other Columns" = Table.SelectColumns(Source,{"yougov_id", "weight"}),
+    #"Removed Duplicates" = Table.Distinct(#"Removed Other Columns")
+in
+    #"Removed Duplicates"

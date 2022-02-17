@@ -1,0 +1,9 @@
+let
+    Source = GoogleBigQuery.Database([BillingProject="converged-havas-de"]),
+    #"converged-havas-de" = Source{[Name="converged-havas-de"]}[Data],
+    yougov_integration_Schema = #"converged-havas-de"{[Name="yougov_viz",Kind="Schema"]}[Data],
+    yougov_fact_Table = yougov_integration_Schema{[Name="yougov_fact",Kind="Table"]}[Data],
+    #"Removed Other Columns" = Table.SelectColumns(yougov_fact_Table,{"yougov_id", "id", "weight"}),
+    #"Reordered Columns" = Table.ReorderColumns(#"Removed Other Columns",{"id", "yougov_id", "weight"})
+in
+    #"Reordered Columns"

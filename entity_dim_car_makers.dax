@@ -1,0 +1,10 @@
+let
+    Source = GoogleBigQuery.Database([BillingProject="converged-havas-de"]),
+    #"converged-havas-de" = Source{[Name="converged-havas-de"]}[Data],
+    yougov_integration_Schema = #"converged-havas-de"{[Name="yougov",Kind="Schema"]}[Data],
+    subvariable_dim_Table = yougov_integration_Schema{[Name="entity_dim",Kind="Table"]}[Data],
+    #"Filtered Rows" = Table.SelectRows(subvariable_dim_Table, each Text.StartsWith([name], "Car Makers:")),
+    #"Removed Other Columns" = Table.SelectColumns(#"Filtered Rows",{"name", "description", "entity_name", "id"}),
+    #"Replaced Value" = Table.ReplaceValue(#"Removed Other Columns","Car Makers: ","",Replacer.ReplaceText,{"name"})
+in
+    #"Replaced Value"

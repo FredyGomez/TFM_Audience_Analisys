@@ -1,0 +1,11 @@
+let
+    Source = GoogleBigQuery.Database([BillingProject="converged-havas-de"]),
+    #"converged-havas-de" = Source{[Name="converged-havas-de"]}[Data],
+    yougov_integration_Schema = #"converged-havas-de"{[Name="yougov_viz",Kind="Schema"]}[Data],
+    demographic_fact_Table = yougov_integration_Schema{[Name="demographic_fact",Kind="Table"]}[Data],
+    #"Removed Other Columns" = Table.SelectColumns(demographic_fact_Table,{"yougov_id", "pdlc_agegrp", "pdlc_age", "gender", "country_id"}),
+    #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns",{{"pdlc_agegrp", "age_group"}, {"pdlc_age", "age"}}),
+    #"Changed Type" = Table.TransformColumnTypes(#"Renamed Columns",{{"age", Int64.Type}}),
+    #"Renamed Columns1" = Table.RenameColumns(#"Changed Type",{{"gender", "Gender"}, {"age", "Age"}, {"age_group", "Age Group"}})
+in
+    #"Renamed Columns1"
