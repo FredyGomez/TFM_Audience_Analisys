@@ -46,12 +46,9 @@ Este último paso genera un esquema preparado y optimizado para visualizaci´on,
 
 ## Anesrake algoritmo en R - Notebooks
 
-Notebook que, recibiendo tablas disponibles en BigQuery, accede a las mismas y ejecuta el algoritmo anesrake
-01_r_anesrake_compute.ipynb
+Notebook que, recibiendo tablas disponibles en BigQuery e información nat rep, se cren los distintos data frames para dar entrada a la ejecución del algoritmo anesrake
 
-Notebook utilizado para validar datos, solo a modo de exploración, no necesario en el cálculo.
-02_r_anesrake_validate.ipynb
-
+weighting_panelists.ipynb
 
 
 ## Visualización desarrollada en PowerBI
